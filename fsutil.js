@@ -11,25 +11,6 @@
 var util 	= require('util'),
 		fs 		= require('fs');
 
-/*
-exports.listFiles = function(path, baseName, callback) {
-	var files = [];
-	fs.readdir(path, function(e, all) {
-		if (e) {
-			callback(e, files);
-			return;
-		}
-		for (var i in all) {
-			if (all[i].indexOf(baseName) === 0) {
-				files.push(all[i]);
-			}
-		}
-		callback(null, files);
-		return;
-	});
-}
-*/
-
 exports.listFiles = function(path, baseName, callback) {
 	var files = [];
 	fs.readdir(path, function(e, all) {
